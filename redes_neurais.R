@@ -49,4 +49,21 @@
 
 # Análises ---------------------------------------------------------------------------------------------------------------------------------
 
+head(iris)
 
+dataset_iris = iris
+
+### Agora o processo de criação de 3 (três) colunas e setar as mesmas como os valores 
+### [TRUE] ou [FALSE] conforme a espécie da cada flor e colocar um nome para cada 
+### coluna. Essa coluna será utilizada na saída da rede neural posterior nos testes
+### com a mesma.
+
+dataset_iris = cbind(dataset_iris,dataset_iris$Species == 'setosa')
+dataset_iris = cbind(dataset_iris,dataset_iris$Species == 'versicolor')
+dataset_iris = cbind(dataset_iris,dataset_iris$Species == 'virginica')
+
+names(dataset_iris)[6] <- 'setosa'
+names(dataset_iris)[7] <- 'versicolor'
+names(dataset_iris)[8] <- 'virginica'
+
+head(dataset_iris)
