@@ -23,5 +23,11 @@
 ### A rede neural que criaremos será utilizada para classificar três espécies plantas 
 ### conhecida como “íris”.
 
+### Passo 1: criar base de treino e teste
+### Passo 2: divisão em 70% para treino e 30% para teste
+### Passo 3: criar modelo/rede neural
+### Passo 4: teste do modelo
+### Passo 5: rede neural ok
+
 
 
