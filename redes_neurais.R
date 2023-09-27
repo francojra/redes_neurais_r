@@ -70,6 +70,8 @@ names(dataset_iris)[8] <- 'virginica'
 
 head(dataset_iris)
 
+### Partição de dados em treino e teste
+
 ### O processo de treinamento consiste em dividir nosso dataset em duas partes, 
 ### sendo a parte de treino ficando com 70% dos dados [dataset_treino] e o restante 
 ### 30% para os testes [dataset_teste].
@@ -81,7 +83,7 @@ particao = createDataPartition(1:dim(dataset_iris)[1],p = .7)
 dataset_treino = dataset_iris[particao$Resample1,]
 dataset_teste = dataset_iris[-particao$Resample1,]
 
-### Criação da rede neural
+### Criação da rede neural (modelo)
 
 install.packages("neuralnet")
 library(neuralnet)
