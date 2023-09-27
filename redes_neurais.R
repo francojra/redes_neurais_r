@@ -105,3 +105,7 @@ logistica <- function(z) {
 
 x <- c(-10:10)
 plot(x, logistica(x), type = "l", col = "red")
+
+### Plotagem da rede neural criada
+
+plot(modelo, rep = "best")
