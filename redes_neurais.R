@@ -29,5 +29,24 @@
 ### Passo 4: teste do modelo
 ### Passo 5: rede neural ok
 
+# DataSet Iris -----------------------------------------------------------------------------------------------------------------------------
+
+### O dataset de Iris é muito utilizado para testar o funcionamento de modelos 
+### clássicos de classificação. 
+
+### Ele foi criado a partir das características da flor Iris e o objetivo é classificar
+### (definir a classe / rótulo) de qual é o tipo dessa flor, entre três tipos possíveis 
+### estão: Versicolor, Setosa e Virginica.
+
+### O conjunto de dados “Iris” consiste em 50 unidades amostrais de três espécies 
+### (setosa, virginica, versicolor) desta (espécie de planta) chamada íris, ou seja, 
+### temos um total de 150 unidades amostrais.
+### De cada uma delas mediu-se quatro variáveis morfológicas: comprimento (Length) e 
+### largura (Width) da sépala e comprimento e largura da pétala.
+
+### O objetivo original é quantificar a variação morfológica em relação a essas 
+### espécies com bases nas quatro variáveis de interesse.
+
+# Análises ---------------------------------------------------------------------------------------------------------------------------------
 
 
