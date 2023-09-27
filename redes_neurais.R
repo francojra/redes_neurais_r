@@ -49,6 +49,8 @@
 
 # Análises ---------------------------------------------------------------------------------------------------------------------------------
 
+### Carregar dados
+
 head(iris)
 
 dataset_iris = iris
@@ -149,3 +151,9 @@ names(resultado)[3] <- 'virginica'
 
 resultado$class = colnames(resultado[,1:3])[max.col(resultado[,1:3], 
                            ties.method = 'first')]
+
+### Exibindo a matriz de confusão e seu percentual de acerto no teste
+
+confusao = table(resultado$class,dataset_teste$Species)
+
+confusao
