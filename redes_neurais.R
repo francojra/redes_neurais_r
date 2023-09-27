@@ -114,3 +114,38 @@ plot(modelo, rep = "best")
 ### [dataset_teste]. 
 
 dataset_teste[28,1:5]
+
+### Tratando o resultado do teste para exibir no nome da flor
+
+### dataset_teste
+
+teste = compute(modelo, dataset_teste[25,1:4])
+
+resultado = as.data.frame(teste$net.result)
+
+names(resultado)[1] <- 'setosa'
+names(resultado)[2] <- 'versicolor'
+names(resultado)[3] <- 'virginica'
+
+resultado$class = colnames(resultado[,1:3])[max.col(resultado[,1:3], 
+                           ties.method = 'first')]
+
+resultado$class
+
+resultado$class = colnames(resultado[,1:3])[max.col(resultado[,1:3], 
+                           ties.method = 'first')]
+
+resultado$class
+
+### Realizando teste com toda a base de teste [dataset_teste]
+
+teste = compute(modelo,dataset_teste[,1:4])
+
+resultado = as.data.frame(teste$net.result)
+
+names(resultado)[1] <- 'setosa'
+names(resultado)[2] <- 'versicolor'
+names(resultado)[3] <- 'virginica'
+
+resultado$class = colnames(resultado[,1:3])[max.col(resultado[,1:3], 
+                           ties.method = 'first')]
