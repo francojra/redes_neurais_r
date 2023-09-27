@@ -89,3 +89,19 @@ modelo = neuralnet( setosa  + versicolor  +  virginica
                       Petal.Length + Petal.Width , 
                     dataset_treino, hidden = c(5,4), 
                     act.fct = "logistic")
+
+### Função de Ativação - Função logística:
+### Possui a função de trasnformar a saída de um neurônio antes que o sinal seja 
+### passado para a próxima camada.
+
+### Função logística
+
+logistica <- function(z) {
+    
+    1 / (1 + exp(-z))
+}
+
+### Gráfico da Função logística
+
+x <- c(-10:10)
+plot(x, logistica(x), type = "l", col = "red")
