@@ -6,6 +6,12 @@
 
 ### Tópicos do script
 
-1. Introdução;
-2. DataSet Iris;
-3. Análises.
+1. Introdução
+2. DataSet Iris
+3. Análises
+- Carregar dados;
+- Partição de dados em treino e teste;
+- Criação da rede neural (modelo);
+- Plotagem da rede neural criada;
+- Tratando o resultado do teste para exibir no nome da flor;
+- Realizando teste com toda a base de teste.
