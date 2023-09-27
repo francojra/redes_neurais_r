@@ -74,3 +74,18 @@ head(dataset_iris)
 
 install.packages("caret", dependencies = T)
 library(caret)
+
+particao = createDataPartition(1:dim(dataset_iris)[1],p = .7)
+dataset_treino = dataset_iris[particao$Resample1,]
+dataset_teste = dataset_iris[-particao$Resample1,]
+
+### Criação da rede neural
+
+install.packages("neuralnet")
+library(neuralnet)
+
+modelo = neuralnet( setosa  + versicolor  +  virginica  
+                    ~ Sepal.Length + Sepal.Width +  
+                      Petal.Length + Petal.Width , 
+                    dataset_treino, hidden = c(5,4), 
+                    act.fct = "logistic")
