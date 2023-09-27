@@ -67,3 +67,10 @@ names(dataset_iris)[7] <- 'versicolor'
 names(dataset_iris)[8] <- 'virginica'
 
 head(dataset_iris)
+
+### O processo de treinamento consiste em dividir nosso dataset em duas partes, 
+### sendo a parte de treino ficando com 70% dos dados [dataset_treino] e o restante 
+### 30% para os testes [dataset_teste].
+
+install.packages("caret", dependencies = T)
+library(caret)
