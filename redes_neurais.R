@@ -12,5 +12,8 @@
 ### escuta falar sobre inteligência artificial.
 
 ### Será utilizado dois pacotes do CRAN para desenvolver essa introdução a redes neurais.
+### O primeiro pacote que utilizaremos será o 'caret' que possui funções diversas para 
+### treinamento e plotagem de modelos de classificação e regressão. O segundo pacote 
+### a utilizarmos é o 'neuralnet', onde utilizaremos para treinamento da nossa rede neural.
 
 
