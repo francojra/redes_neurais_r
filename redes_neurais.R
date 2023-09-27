@@ -109,3 +109,8 @@ plot(x, logistica(x), type = "l", col = "red")
 ### Plotagem da rede neural criada
 
 plot(modelo, rep = "best")
+
+### Realização dos testes da rede neural com apenas o registro [28] da base de teste 
+### [dataset_teste]. 
+
+dataset_teste[28,1:5]
