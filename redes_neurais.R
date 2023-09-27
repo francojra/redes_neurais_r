@@ -16,4 +16,12 @@
 ### treinamento e plotagem de modelos de classificação e regressão. O segundo pacote 
 ### a utilizarmos é o 'neuralnet', onde utilizaremos para treinamento da nossa rede neural.
 
+### Abaixo segue um passo a passo que realizaremos para criar a rede neural.
+### O primeiro passo é criar a base de teste e treino.
+### Consequentemente precisamos de uma base completa com as entradas para o 
+### nosso neurônio e a respectiva saída nesses dados. 
+### A rede neural que criaremos será utilizada para classificar três espécies plantas 
+### conhecida como “íris”.
+
+
 
